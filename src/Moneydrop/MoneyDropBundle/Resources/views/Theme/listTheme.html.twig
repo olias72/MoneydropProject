@@ -1,0 +1,11 @@
+{% extends ('::base.html.twig') %}
+{% block title %}{{ parent() - Liste des themes}}{% endblock %}
+
+{% block body %}
+    <ul>
+        {% for theme in listTheme %}
+            <li>{{ theme.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+

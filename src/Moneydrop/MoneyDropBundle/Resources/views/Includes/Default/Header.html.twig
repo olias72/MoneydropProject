@@ -1,0 +1,17 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ path('money_drop_homepage') }}">
+            <img alt="logo" class="img-rounded" height="79" src="{{ asset('bundles/moneydrop/images/MD_logo.png') }}" width="143"></a>
+        <ul class="nav navbar-nav">
+            <li><a href="{{ path('money_drop_theme') }}">Jeu</a></li>
+            <li><a href="{{ path('money_drop_history') }}">Classement</a></li>
+            <li><a href="{{ path('money_drop_list_theme') }}">Paramètres</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{ path('money_drop_homepage') }}">
+                    <span class="glyphicon glyphicon-user"></span> S'inscrire</a></li>
+            <li><a href="{{ path('fos_user_security_login') }}" data-toggle="modal" data-target="#connect">
+                    <span class="glyphicon glyphicon-log-in"></span> Se connecter</a></li>
+        </ul>
+    </div>
+</nav>

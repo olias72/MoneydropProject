@@ -1,0 +1,31 @@
+money_drop_homepage:
+    path:     /
+    defaults: { _controller: MoneyDropBundle:Default:index }
+
+money_drop_game_parameters:
+    path:     /parameters
+    defaults: { _controller: MoneyDropBundle:Game:changeParameters }
+
+money_drop_history:
+    path:     /history
+    defaults: { _controller: MoneyDropBundle:Default:history }
+
+money_drop_theme:
+    path:     /theme
+    defaults: { _controller: MoneyDropBundle:Theme:theme }
+
+money_drop_add_question:
+    path:     /add_question
+    defaults: { _controller: MoneyDropBundle:Question:addQuestion }
+
+money_drop_questionnaire:
+    path:     /questionnaire
+    defaults: { _controller: MoneydropBundle:Default:questionnaire }
+
+money_drop_success:
+    path:     /success
+    defaults: { _controller: MoneydropBundle:Default:success }
+
+money_drop_list_theme:
+    path:     /listTheme
+        defaults: { _controller: MoneyDropBundle:Theme:listTheme }
